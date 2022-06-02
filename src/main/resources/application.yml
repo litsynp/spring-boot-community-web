@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: clientIdTest
+            client-secret: clientSecretTest
+          facebook:
+            client-id: clientIdTest
+            client-secret: clientSecretTest
+
+custom:
+  oauth2:
+    kakao:
+      client-id: clientIdTest
