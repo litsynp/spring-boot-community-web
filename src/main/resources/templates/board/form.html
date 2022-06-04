@@ -30,6 +30,10 @@
       </td>
     </tr>
     <tr>
+      <th style="padding:13px 0 0 15px;">생성날짜</th>
+      <td><input type="text" class="col-md-1 form-control input-sm" readonly="readonly" th:value="${board?.createdDate} ? ${#temporals.format(board.createdDate,'yyyy-MM-dd HH:mm')} : ${board?.createdDate}"/></td>
+    </tr>
+    <tr>
       <th style="padding:13px 0 0 15px;">제목</th>
       <td><input id="board_title" type="text" class="col-md-1 form-control input-sm"
                  th:value="${board?.title}"/></td>
