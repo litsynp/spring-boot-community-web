@@ -15,7 +15,7 @@
   </div>
   <br/>
   <input id="board_idx" type="hidden" th:value="${board?.idx}"/>
-  <input id=board_create_date" type="hidden" th:value="${board?.createdDate}"/>
+  <input id="board_create_date" type="hidden" th:value="${board?.createdDate}"/>
   <table class="table">
     <tr>
       <th style="padding:13px 0 0 15px">게시판 선택</th>
@@ -74,7 +74,7 @@
     });
 
     $.ajax({
-      url: "http://localhost:8080/api/boards",
+      url: "http://localhost:8081/api/boards",
       type: "POST",
       data: jsonData,
       contentType: "application/json",
@@ -117,7 +117,7 @@
 
   $('#delete').click(function () {
     $.ajax({
-      url: "http://localhost:8080/api/boards/" + $('#board_idx').val(),
+      url: "http://localhost:8081/api/boards/" + $('#board_idx').val(),
       type: "DELETE",
       contentType: "application/json",
       dataType: "json",
