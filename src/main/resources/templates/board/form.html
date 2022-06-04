@@ -82,6 +82,9 @@
       type: "POST",
       data: jsonData,
       contentType: "application/json",
+      headers: {
+        "Authorization": "Basic " + btoa("litsynp" + ":" + "test")
+      },
       dataType: "json",
       success: function () {
         alert("저장 성공!");
